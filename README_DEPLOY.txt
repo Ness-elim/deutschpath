@@ -1,7 +1,1 @@
-DeutschPath 4.0 Online — frontend files
-
-Upload the CONTENTS of this folder to the root of your GitHub Pages publishing branch.
-Then follow ONLINE_SETUP.md in the full project package to connect the site to Google Sheets.
-
-Do not put your private Google Sheets Sync key in this folder or in GitHub.
-Enter it only inside DeutschPath > Backup, restore & cloud sync after the site is online.
+DeutschPath 4.1 web files. Replace the matching files in your existing GitHub repository. IMPORTANT: edit online-config.js and paste your existing Apps Script /exec URL before/after upload using GitHub Edit. Do not publish the legacy Sync key.
