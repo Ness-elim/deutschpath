@@ -1,7 +1,11 @@
-DeutschPath 4.0 Online — frontend files
+DeutschPath 4.0.1 Safe Sync
 
-Upload the CONTENTS of this folder to the root of your GitHub Pages publishing branch.
-Then follow ONLINE_SETUP.md in the full project package to connect the site to Google Sheets.
+Upload these files to the existing GitHub Pages repository root and commit the changes.
+No Google Apps Script backend change is required if your existing 4.0 backend is working.
 
-Do not put your private Google Sheets Sync key in this folder or in GitHub.
-Enter it only inside DeutschPath > Backup, restore & cloud sync after the site is online.
+Cloud behavior:
+- Automatic cloud check on app startup.
+- Normal learning saves automatically upload after local saves.
+- Download from cloud explicitly replaces this device only after confirmation and preserves a recovery copy.
+- Upload this device refuses to overwrite a newer cloud revision.
+- JSON Restore remains manual and restores locally only; it never auto-uploads to cloud.

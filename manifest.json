@@ -1,6 +1,6 @@
 {
-  "name": "DeutschPath Course Engine 4.0 Online",
-  "short_name": "DeutschPath 4.0",
+  "name": "DeutschPath 4.0.1 Safe Sync",
+  "short_name": "DeutschPath",
   "version": "4.0.0",
   "start_url": "./index.html",
   "display": "standalone",
