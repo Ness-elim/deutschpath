@@ -1,14 +1,14 @@
 {
-  "name": "DeutschPath 4.0.3 Focus & Lesson Fixes",
+  "name": "DeutschPath 4.0.7 Safe Repair",
   "short_name": "DeutschPath",
   "id": "./",
-  "version": "4.0.3",
+  "version": "4.0.7",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f4f6fb",
   "theme_color": "#111827",
-  "description": "German learning A1-B1 Core with offline-first local progress and safe Google Sheets synchronization.",
+  "description": "German learning A1-B1 Core with complete clock-time teaching, offline-first local progress, and safe Google Sheets synchronization.",
   "icons": [
     {
       "src": "icons/icon-192.png",

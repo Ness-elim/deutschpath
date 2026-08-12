@@ -1,4 +1,4 @@
-const CACHE_NAME='deutschpath-pwa-v4.0.4';
+const CACHE_NAME='deutschpath-pwa-v4.0.7';
 const APP_SHELL=[
   './',
   './index.html',
