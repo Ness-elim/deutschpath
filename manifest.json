@@ -1,10 +1,26 @@
 {
-  "name": "DeutschPath 4.0.1 Safe Sync",
+  "name": "DeutschPath 4.0.3 Focus & Lesson Fixes",
   "short_name": "DeutschPath",
-  "version": "4.0.0",
+  "id": "./",
+  "version": "4.0.3",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#f4f6fb",
   "theme_color": "#111827",
-  "description": "German learning A1-B1 Core with local-first progress and Google Sheets synchronization."
+  "description": "German learning A1-B1 Core with offline-first local progress and safe Google Sheets synchronization.",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }
