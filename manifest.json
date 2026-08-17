@@ -1,8 +1,8 @@
 {
-  "name": "DeutschPath 4.0.7 Safe Repair",
+  "name": "DeutschPath 4.0.8",
   "short_name": "DeutschPath",
   "id": "./",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

@@ -1,4 +1,4 @@
-DeutschPath 4.0.3 — OFFLINE TEST COPY
+DeutschPath 4.0.8 — OFFLINE TEST COPY
 
 Purpose: local testing before deployment.
 
@@ -9,9 +9,12 @@ Purpose: local testing before deployment.
 5) To test with existing progress, use Backup & restore -> Restore selected file with a JSON backup.
 6) Do not use this test copy as the GitHub deployment package. Use the separate deploy ZIP.
 
-Fixes in 4.0.3:
+Fixes in 4.0.8:
 - Recommended focus now opens the section that matches the current weak area / unfinished plan item.
 - Repeating an already-completed Daily Lesson can count toward today's Daily Plan once per day.
 - Completed lessons selected for review restart at step 1.
 - Course Engine input questions now show concise answer intent/context when polarity or form could be ambiguous.
 - Course Engine hints are tied to the unit grammar target and answer type instead of generic hints.
+
+
+DeutschPath 4.0.8: Backup & restore is now Settings. Settings shows the running release/build. Guided lessons were audited and expanded with missing A1/A2 foundation coverage.
