@@ -1,13 +1,13 @@
-DeutschPath 5.1.4 Unified
+DeutschPath 5.1.5 Unified
 
 Levels: A1, A2, B1, B2.
 Open index.html to choose a level.
 Progress remains independent per level. Backup and cloud payloads include all four levels together.
 
 SYNC BACKEND 5.1
-This build requires the existing DeutschPath 5.1 Merge/Event Sync Code.gs backend. No backend change is required when upgrading from 5.1.3 to 5.1.4.
+This build requires the existing DeutschPath 5.1 Merge/Event Sync Code.gs backend. No backend change is required when upgrading from 5.1.3 to 5.1.5.
 
-5.1.4 full review and consistency fixes:
+5.1.5 full review and consistency fixes:
 - A1 has 24 Guided Lessons and 24 fully authored Course Engine units.
 - A2 has 30 Guided Lessons and 30 fully authored Course Engine units.
 - B1 has 30 Guided Lessons and 30 fully authored Course Engine units.
@@ -23,6 +23,6 @@ This build requires the existing DeutschPath 5.1 Merge/Event Sync Code.gs backen
 - Streak counts a day after activity in any one real learning section.
 - Recommended focus routes to the relevant skill instead of always opening the same place.
 - Settings, unified Backup/Restore, Repair connection preservation, Merge/Event Sync and four independent level states remain intact.
-- PWA cache is versioned as 5.1.4, course assets use 5.1.4 cache-busting, and offline asset matching ignores the query string so all four level packs remain available offline.
+- PWA cache is versioned as 5.1.5, course assets use 5.1.5 cache-busting, and offline asset matching ignores the query string so all four level packs remain available offline.
 
 Build: Web Deploy / PWA — safe automatic merge enabled.
