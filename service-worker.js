@@ -1,13 +1,16 @@
-const CACHE_NAME='deutschpath-unified-5.1.0';
+const CACHE_NAME='deutschpath-unified-5.1.2';
 const APP_ASSETS=[
   "./",
   "./index.html",
   "./manifest.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
-  "./levels/a1a2/index.html",
-  "./levels/a1a2/course-data.js",
-  "./levels/a1a2/course-engine.js",
+  "./levels/a1/index.html",
+  "./levels/a1/course-data.js",
+  "./levels/a1/course-engine.js",
+  "./levels/a2/index.html",
+  "./levels/a2/course-data.js",
+  "./levels/a2/course-engine.js",
   "./levels/b1/index.html",
   "./levels/b1/course-data.js",
   "./levels/b1/course-engine.js",
