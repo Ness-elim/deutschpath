@@ -1,25 +1,28 @@
-DeutschPath 5.1.3 Unified
+DeutschPath 5.1.4 Unified
 
 Levels: A1, A2, B1, B2.
 Open index.html to choose a level.
 Progress remains independent per level. Backup and cloud payloads include all four levels together.
 
 SYNC BACKEND 5.1
-This build requires the DeutschPath 5.1 Merge/Event Sync Code.gs backend. It merges multi-device progress and uses a reset epoch so stale offline devices cannot resurrect reset data. No OAuth is required.
+This build requires the existing DeutschPath 5.1 Merge/Event Sync Code.gs backend. No backend change is required when upgrading from 5.1.3 to 5.1.4.
 
-5.1.3 sync fix:
-- Opening or reloading DeutschPath no longer marks unchanged progress as a new local cloud change.
-- Startup normalization/saving is cloud-silent, preventing repeated automatic merge/reload loops.
-- A clean device only merges when it has genuine unsynced learning changes.
-- If the cloud has a newer revision and the local device is clean, the app downloads the merged state instead of re-uploading the same state.
-- The first connection on a browser still performs one safe merge so pre-existing local progress is not discarded.
-- Cloud request timeout handling is shorter and returns to a clear pending/error state instead of appearing to merge indefinitely.
-
-Existing behavior retained:
-- A1, A2, B1 and B2 are separate selectable paths.
-- Contribution has 9 total states: empty + 8 colors for 1–8 active daily sections.
-- Streak counts a day when at least one real learning section has activity.
-- Unified JSON Backup/Restore covers all four levels.
-- Apps Script Web app URL and Sync key are preserved by Repair and reload.
+5.1.4 full review and consistency fixes:
+- A1 has 24 Guided Lessons and 24 fully authored Course Engine units.
+- A2 has 30 Guided Lessons and 30 fully authored Course Engine units.
+- B1 has 30 Guided Lessons and 30 fully authored Course Engine units.
+- B2 has 47 Guided Lessons and 47 fully authored Course Engine units.
+- Course Engine numbering is local to the selected level (1..N), while stable internal IDs remain compatible with saved progress.
+- Dashboard Level progress now separates Guided Lessons from Course Engine mastery/evidence progress; the two percentages are no longer presented as one value.
+- Course Engine validation no longer expects the legacy 130-unit combined map.
+- Old A1/A2 Course Engine state is filtered to the new valid ranges so obsolete outline-unit progress cannot inflate totals.
+- All Course Engine units are fully authored; old outline placeholders were removed from the active level maps.
+- Course Engine question audit removes duplicate/trivial questions, guarantees meaningful hints, and rebuilds checkpoint question pools.
+- Contribution remains exactly 9 visual states: empty + 8 colors for 1–8 active daily sections.
+- Contribution heatmap sizing was corrected so the grid does not create a large empty horizontal area.
+- Streak counts a day after activity in any one real learning section.
+- Recommended focus routes to the relevant skill instead of always opening the same place.
+- Settings, unified Backup/Restore, Repair connection preservation, Merge/Event Sync and four independent level states remain intact.
+- PWA cache is versioned as 5.1.4, course assets use 5.1.4 cache-busting, and offline asset matching ignores the query string so all four level packs remain available offline.
 
 Build: Web Deploy / PWA — safe automatic merge enabled.
