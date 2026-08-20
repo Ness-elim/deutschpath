@@ -1,4 +1,4 @@
-const CACHE_NAME='deutschpath-unified-5.0.3';
+const CACHE_NAME='deutschpath-unified-5.1.0';
 const APP_ASSETS=[
   "./",
   "./index.html",

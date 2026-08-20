@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#111827">
-<title>DeutschPath 5.0</title><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>DeutschPath 5.1</title><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icons/icon-192.png">
 <style>
 :root{--bg:#f4f6fb;--card:#fff;--text:#172033;--muted:#667085;--border:#e2e8f0;--primary:#1f6feb;--soft:#eaf2ff;--sidebar:#101827}
 @media(prefers-color-scheme:dark){:root{--bg:#0b1220;--card:#111b2e;--text:#eef4ff;--muted:#a9b5c8;--border:#26354d;--primary:#69a2ff;--soft:#172b4b;--sidebar:#070d18}}
@@ -11,14 +11,14 @@
 @media(max-width:760px){.grid{grid-template-columns:1fr}.shell{padding:24px 15px 42px}.level{min-height:0}}
 </style></head>
 <body><main class="shell">
-<div class="brand"><div class="mark">D</div><div><h1>DeutschPath</h1><p class="sub">Version 5.0.3 · Choose your level</p></div></div>
+<div class="brand"><div class="mark">D</div><div><h1>DeutschPath</h1><p class="sub">Version 5.1.0 · Choose your level</p></div></div>
 <section class="hero"><h2>One app. Three independent learning paths.</h2><p>Select A1–A2, B1 or B2. You can switch levels at any time. Each level keeps its own lessons, vocabulary evidence and daily progress, while unified backup and cloud sync can carry all three together.</p><div class="continue" id="continueBox" hidden><span id="continueText"></span><a id="continueLink" href="#">Continue</a></div></section>
 <section class="grid">
 <article class="level" data-level="a1a2"><span class="badge">A1–A2</span><h3>A1–A2</h3><p>Core German from first communication through the full A2 grammar, vocabulary and skills sequence.</p><div class="stats"><span class="progressText">No local progress yet</span><span>30 lessons</span></div><div class="bar"><span></span></div><a class="go" href="levels/a1a2/index.html">Open A1–A2</a></article>
 <article class="level" data-level="b1"><span class="badge">B1</span><h3>B1</h3><p>Independent communication, extended reading and listening, structured writing, argumentation and B1 grammar.</p><div class="stats"><span class="progressText">No local progress yet</span><span>30 lessons</span></div><div class="bar"><span></span></div><a class="go" href="levels/b1/index.html">Open B1</a></article>
 <article class="level" data-level="b2"><span class="badge">B2</span><h3>B2</h3><p>Complex texts, nuanced argumentation, professional and academic communication, register, discourse and advanced B2 grammar.</p><div class="stats"><span class="progressText">No local progress yet</span><span>47 lessons</span></div><div class="bar"><span></span></div><a class="go" href="levels/b2/index.html">Open B2</a></article>
 </section>
-<div class="meta"><b>Build:</b> Web Deploy / Offline PWA. <b>Cloud:</b> the same Apps Script URL and Sync key are shared across levels after you save the connection in Settings. <b>Backup:</b> Download backup from any level exports all available A1–A2, B1 and B2 progress together.</div>
+<div class="meta"><b>Build:</b> Web Deploy / Offline PWA. <b>Cloud:</b> DeutschPath 5.1 Merge/Event Sync combines progress from multiple devices using one Apps Script URL and Sync key. <b>Backup:</b> Download backup from any level exports all available A1–A2, B1 and B2 progress together.</div>
 </main>
 <script>
 const levels={a1a2:{label:'A1–A2',key:'deutschPathStateV29',total:30,url:'levels/a1a2/index.html'},b1:{label:'B1',key:'deutschPathB1AdvancedStateV1',total:30,url:'levels/b1/index.html'},b2:{label:'B2',key:'deutschPathB2UltraStateV1',total:47,url:'levels/b2/index.html'}};
