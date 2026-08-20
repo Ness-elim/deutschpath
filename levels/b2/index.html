@@ -476,7 +476,7 @@
     </section>
 
     <section id="data" class="page">
-      <article class="panel"><div class="panel-header"><div><h3>Settings</h3><span>Cloud sync, offline mode, backup, restore, repair and app information.</span></div><span id="storageInfo"></span></div><div class="notice">Cloud sync uses DeutschPath 5.1 Merge/Event Sync. Progress from different devices is combined instead of one full device copy replacing another. JSON export remains available as an independent backup.</div><div class="data-grid" style="margin-top:18px"><div class="data-card"><h4>App information</h4><p>One DeutschPath app with independent progress for A1, A2, B1 and B2.</p><div class="database-status" style="margin-top:12px"><div><span>Release</span><b>DeutschPath 5.2.0</b></div><div><span>Current level</span><b>B2</b></div><div><span>Data schema</span><b>B2-1</b></div></div><div class="button-row" style="justify-content:flex-start;margin-top:12px"><a class="secondary" href="../../index.html" style="text-decoration:none;display:inline-flex;align-items:center">Change level</a></div><small style="display:block;margin-top:10px;color:var(--muted)">Progress for each level is stored separately, while backup and cloud sync cover all levels together.</small></div><div class="data-card"><h4>Google Sheets merge sync</h4><p>Use one Apps Script URL and Sync key on all devices. Version 5.1 merges learning evidence, completed lessons, daily activity, vocabulary history and course progress across devices.</p><label class="field-label" for="cloudEndpoint">Apps Script Web app URL</label><input id="cloudEndpoint" class="wide-input" type="url" autocomplete="off" placeholder="https://script.google.com/macros/s/.../exec"><label class="field-label" for="cloudSyncKey" style="margin-top:10px">Sync key</label><input id="cloudSyncKey" class="wide-input" type="password" autocomplete="off" placeholder="Paste your private Sync key"><div class="database-status" style="margin-top:12px"><div><span>Status</span><b id="cloudSyncStatus">Checking…</b></div><div><span>This device</span><b id="cloudDeviceInfo">Preparing…</b></div></div><small id="cloudSyncLast" style="display:block;margin:10px 0;color:var(--muted)">Cloud status will appear here.</small><div class="button-row" style="justify-content:flex-start"><button id="cloudSaveConnection" class="secondary">Save connection</button><button id="cloudDownload" class="primary">Download merged cloud</button><button id="cloudUpload" class="secondary">Merge this device</button><button id="cloudDisconnect" class="ghost">Disconnect</button></div><small style="display:block;margin-top:10px;color:var(--muted)">Automatic sync uses safe merge semantics. If phone and computer both changed, their progress is combined. Download merged cloud remains an explicit recovery action.</small></div><div class="data-card"><h4>Offline app</h4><p>Install DeutschPath on this device so the full learning app can open without internet. Progress is saved locally while offline and cloud sync resumes when the connection returns.</p><div class="database-status" style="margin-top:12px"><div><span>Network</span><b id="pwaNetworkStatus">Checking…</b></div><div><span>Offline cache</span><b id="pwaCacheStatus">Preparing…</b></div></div><div class="button-row" style="justify-content:flex-start;margin-top:12px"><button id="pwaInstallButton" class="primary" hidden>Install DeutschPath</button></div><small id="pwaInstallHint" style="display:block;margin-top:10px;color:var(--muted)">After the first successful online visit, this device keeps an offline copy of the app.</small></div><div class="data-card"><h4>Export backup</h4><p>Download one JSON backup containing progress for A1, A2, B1 and B2, including review schedules and learning evidence.</p><button id="exportBackup" class="primary">Download backup</button><small id="lastBackupText" style="display:block;margin-top:10px;color:var(--muted)"></small></div><div class="data-card"><h4>Restore backup</h4><p>Restore a DeutschPath 5 unified backup, or import an older single-level DeutschPath backup.</p><input id="importBackupFile" class="file-input" type="file" accept="application/json,.json"><button id="importBackup" class="secondary">Restore selected file</button><div id="importFeedback" class="feedback hidden"></div></div><div class="data-card"><h4>Learning database</h4><p>Check the canonical evidence records used for learned words and progress.</p><div id="databaseStatus" class="database-status"></div><button id="verifyDatabase" class="secondary">Run integrity check</button><div id="databaseFeedback" class="feedback hidden"></div></div><div class="data-card"><h4>Browser repair</h4><p>Rebuild local app storage and remove stale DeutschPath data while preserving your learning progress and saved cloud connection.</p><button id="repairBrowserData" class="secondary">Repair and reload</button><small style="display:block;margin-top:10px;color:var(--muted)">Use this if navigation or saved progress behaves unexpectedly. Apps Script Web app URL and Sync key are preserved.</small></div><div class="data-card danger-zone"><h4>Reset all learning data</h4><p>Erase A1, A2, B1 and B2 progress on this device and create a cloud reset tombstone so stale offline devices cannot restore old progress. Export a unified backup first.</p><button id="resetProgress" class="danger-soft">Reset all levels</button></div></div></article>
+      <article class="panel"><div class="panel-header"><div><h3>Settings</h3><span>Cloud sync, offline mode, backup, restore, repair and app information.</span></div><span id="storageInfo"></span></div><div class="notice">Cloud sync uses DeutschPath 5.1 Merge/Event Sync. Progress from different devices is combined instead of one full device copy replacing another. JSON export remains available as an independent backup.</div><div class="data-grid" style="margin-top:18px"><div class="data-card"><h4>App information</h4><p>One DeutschPath app with independent progress for A1, A2, B1 and B2.</p><div class="database-status" style="margin-top:12px"><div><span>Release</span><b>DeutschPath 5.2.1</b></div><div><span>Current level</span><b>B2</b></div><div><span>Data schema</span><b>B2-1</b></div></div><div class="button-row" style="justify-content:flex-start;margin-top:12px"><a class="secondary" href="../../index.html" style="text-decoration:none;display:inline-flex;align-items:center">Change level</a></div><small style="display:block;margin-top:10px;color:var(--muted)">Progress for each level is stored separately, while backup and cloud sync cover all levels together.</small></div><div class="data-card"><h4>Google Sheets merge sync</h4><p>Use one Apps Script URL and Sync key on all devices. Version 5.1 merges learning evidence, completed lessons, daily activity, vocabulary history and course progress across devices.</p><label class="field-label" for="cloudEndpoint">Apps Script Web app URL</label><input id="cloudEndpoint" class="wide-input" type="url" autocomplete="off" placeholder="https://script.google.com/macros/s/.../exec"><label class="field-label" for="cloudSyncKey" style="margin-top:10px">Sync key</label><input id="cloudSyncKey" class="wide-input" type="password" autocomplete="off" placeholder="Paste your private Sync key"><div class="database-status" style="margin-top:12px"><div><span>Status</span><b id="cloudSyncStatus">Checking…</b></div><div><span>This device</span><b id="cloudDeviceInfo">Preparing…</b></div></div><small id="cloudSyncLast" style="display:block;margin:10px 0;color:var(--muted)">Cloud status will appear here.</small><div class="button-row" style="justify-content:flex-start"><button id="cloudSaveConnection" class="secondary">Save connection</button><button id="cloudDownload" class="primary">Download merged cloud</button><button id="cloudUpload" class="secondary">Merge this device</button><button id="cloudDisconnect" class="ghost">Disconnect</button></div><small style="display:block;margin-top:10px;color:var(--muted)">Automatic sync uses safe merge semantics. If phone and computer both changed, their progress is combined. Download merged cloud remains an explicit recovery action.</small></div><div class="data-card"><h4>Offline app</h4><p>Install DeutschPath on this device so the full learning app can open without internet. Progress is saved locally while offline and cloud sync resumes when the connection returns.</p><div class="database-status" style="margin-top:12px"><div><span>Network</span><b id="pwaNetworkStatus">Checking…</b></div><div><span>Offline cache</span><b id="pwaCacheStatus">Preparing…</b></div></div><div class="button-row" style="justify-content:flex-start;margin-top:12px"><button id="pwaInstallButton" class="primary" hidden>Install DeutschPath</button></div><small id="pwaInstallHint" style="display:block;margin-top:10px;color:var(--muted)">After the first successful online visit, this device keeps an offline copy of the app.</small></div><div class="data-card"><h4>Export backup</h4><p>Download one JSON backup containing progress for A1, A2, B1 and B2, including review schedules and learning evidence.</p><button id="exportBackup" class="primary">Download backup</button><small id="lastBackupText" style="display:block;margin-top:10px;color:var(--muted)"></small></div><div class="data-card"><h4>Restore backup</h4><p>Restore a DeutschPath 5 unified backup, or import an older single-level DeutschPath backup.</p><input id="importBackupFile" class="file-input" type="file" accept="application/json,.json"><button id="importBackup" class="secondary">Restore selected file</button><div id="importFeedback" class="feedback hidden"></div></div><div class="data-card"><h4>Learning database</h4><p>Check the canonical evidence records used for learned words and progress.</p><div id="databaseStatus" class="database-status"></div><button id="verifyDatabase" class="secondary">Run integrity check</button><div id="databaseFeedback" class="feedback hidden"></div></div><div class="data-card"><h4>Browser repair</h4><p>Rebuild local app storage and remove stale DeutschPath data while preserving your learning progress and saved cloud connection.</p><button id="repairBrowserData" class="secondary">Repair and reload</button><small style="display:block;margin-top:10px;color:var(--muted)">Use this if navigation or saved progress behaves unexpectedly. Apps Script Web app URL and Sync key are preserved.</small></div><div class="data-card danger-zone"><h4>Reset all learning data</h4><p>Erase A1, A2, B1 and B2 progress on this device and create a cloud reset tombstone so stale offline devices cannot restore old progress. Export a unified backup first.</p><button id="resetProgress" class="danger-soft">Reset all levels</button></div></div></article>
     </section>
   </main>
 </div>
@@ -566,9 +566,9 @@
 'use strict';
 
 const APP_VERSION = 200;
-const RELEASE_VERSION = '5.2.0';
+const RELEASE_VERSION = '5.2.1';
 const STORAGE_KEY = 'deutschPathB2UltraStateV1';
-const UNIFIED_RELEASE='5.2.0';
+const UNIFIED_RELEASE='5.2.1';
 const UNIFIED_LEVEL='b2';
 const UNIFIED_LEVEL_LABEL='B2';
 const UNIFIED_LEVEL_KEYS={a1:'deutschPathA1StateV1',a2:'deutschPathA2StateV1',b1:'deutschPathB1AdvancedStateV1',b2:'deutschPathB2UltraStateV1'};
@@ -629,8 +629,11 @@ function cloudPayloadJson(stateJson){
 function randomCloudId(){try{return crypto.randomUUID()}catch(error){return `dp-${Date.now()}-${Math.random().toString(16).slice(2)}`}}
 function backendSupportsMerge(remote){return !!remote&&String(remote.backendVersion||'').startsWith('5.1.')&&remote.syncMode==='merge-events'}
 function saveUnifiedResetRecovery(payload,reason){try{storage.setItem('deutschPathUnifiedResetRecoveryV1',JSON.stringify({savedAt:new Date().toISOString(),reason:String(reason||''),payload:JSON.parse(payload)}))}catch(error){}}
+const CLOUD_PROTECTED_PAGES=new Set(['placement','courseEngine','checkpoints','lesson','listening','review','wordtest','grammar','writing','conversation']);
+function cloudCurrentPageId(){const hash=(location.hash||'').replace(/^#/,'');return hash==='roadmapPage'?'courseEngine':(hash||'dashboard')}
+function cloudLearningSessionActive(){return CLOUD_PROTECTED_PAGES.has(cloudCurrentPageId())}
 const cloudSync={
-  ready:false,serverRevision:0,serverEpoch:0,inFlight:false,pendingStateJson:null,timer:null,pollDelay:650,
+  ready:false,serverRevision:0,serverEpoch:0,inFlight:false,pendingStateJson:null,timer:null,pollDelay:650,deferredRemote:null,deferredDetail:'',deferredReset:null,changeSerial:0,
   config(){return readCloudConfig()},
   isConfigured(){const c=this.config();return /^https:\/\/script\.google\.com\/macros\/s\//i.test(c.url)&&c.key.length>=8},
   endpoint(){return this.config().url.replace(/\/+$/,'')},
@@ -655,6 +658,8 @@ const cloudSync={
   },
   noteLocalSave(stateJson){
     if(CLOUD_STARTUP_SAVE_SUPPRESSED){this.pendingStateJson=stateJson;return}
+    this.changeSerial++;
+    if(this.deferredReset){this.pendingStateJson=stateJson;this.setStatus('Cloud reset queued','A reset from another device will be applied after you leave this activity. Current work stays on screen and a recovery copy is preserved.');return}
     if(!this.isConfigured())return;const meta=readCloudMeta();meta.dirty=true;meta.localModifiedAt=new Date().toISOString();writeCloudMeta(meta);this.pendingStateJson=stateJson;clearTimeout(this.timer);
     if(!navigator.onLine){this.setStatus('Offline · changes queued','Progress is safe on this device. It can be merged when internet returns.');return}
     if(!CLOUD_AUTOMERGE){this.setStatus('Local changes waiting','Offline-test mode will not upload automatically. Press Merge this device when you want to combine this progress with the cloud.');return}
@@ -694,41 +699,89 @@ const cloudSync={
         meta.dirty=true;meta.localModifiedAt=meta.localModifiedAt||new Date().toISOString();writeCloudMeta(meta);this.pendingStateJson=localStateJson;await this.mergeNow(true);return;
       }
       if(this.serverRevision>lastSyncedRevision){
-        if(remote.json!==localPayload){await this.applyRemote(remote,'A newer merged cloud revision was found. Loading it without re-uploading this unchanged device…');return}
+        if(remote.json!==localPayload){await this.applyRemote(remote,'A newer merged cloud revision was found and synchronized in the background.');return}
         writeCloudMeta({...meta,dirty:false,hasSynced:true,lastSyncedRevision:this.serverRevision,lastServerUpdatedAt:remote.updatedAt||null,lastSeenRevision:this.serverRevision,cloudEpoch:this.serverEpoch});
       }
       this.setStatus('Synced',`Merge revision ${this.serverRevision} · no pending local changes`);this.updateButton();
     }catch(error){console.error('Cloud initialization failed.',error);this.ready=false;if(!navigator.onLine)this.setStatus('Offline','DeutschPath is working from this device. Cloud merge will retry when internet returns.');else this.setStatus('Connection failed',error.message||'Could not connect to Google Sheets.');this.updateButton()}
   },
-  async applyRemote(remote,detail){
+  async applyRemote(remote,detail,{forceLive=false,syncSerial=null}={}){
     const wrapper=JSON.parse(remote.json||'{}');if(wrapper.app!=='DeutschPath')throw new Error('Cloud data is not a valid DeutschPath backup.');
-    this.setStatus('Merged cloud update',detail);
+    const levels={};
     if(wrapper.unified&&wrapper.levels&&typeof wrapper.levels==='object'){
-      if(wrapper.levels.a1a2&&typeof wrapper.levels.a1a2==='object'){const legacy={...wrapper.levels.a1a2,_splitFromA1A2:true};if(!wrapper.levels.a1)storage.setItem(UNIFIED_LEVEL_KEYS.a1,JSON.stringify(legacy));if(!wrapper.levels.a2)storage.setItem(UNIFIED_LEVEL_KEYS.a2,JSON.stringify(legacy));}
-      for(const [levelId,key] of Object.entries(UNIFIED_LEVEL_KEYS)){const value=wrapper.levels[levelId];if(value&&typeof value==='object')storage.setItem(key,JSON.stringify(value))}
+      if(wrapper.levels.a1a2&&typeof wrapper.levels.a1a2==='object'){
+        const legacy={...wrapper.levels.a1a2,_splitFromA1A2:true};
+        if(!wrapper.levels.a1)levels.a1=legacy;if(!wrapper.levels.a2)levels.a2=legacy;
+      }
+      for(const levelId of Object.keys(UNIFIED_LEVEL_KEYS)){const value=wrapper.levels[levelId];if(value&&typeof value==='object')levels[levelId]=value}
     }else if(wrapper.appState&&typeof wrapper.appState==='object'){
-      const raw=JSON.stringify(wrapper.appState),inferred=raw.includes('b2u')?'b2':(raw.includes('b1u')?'b1':'a1a2');storage.setItem(UNIFIED_LEVEL_KEYS[inferred],JSON.stringify(wrapper.appState));
+      const raw=JSON.stringify(wrapper.appState),inferred=raw.includes('b2u')?'b2':(raw.includes('b1u')?'b1':UNIFIED_LEVEL);levels[inferred]=wrapper.appState;
     }else throw new Error('Cloud data does not contain learning progress.');
+
+    // Other levels can be refreshed immediately because they cannot interrupt the active level.
+    for(const [levelId,key] of Object.entries(UNIFIED_LEVEL_KEYS)){if(levelId!==UNIFIED_LEVEL&&levels[levelId]&&typeof levels[levelId]==='object')storage.setItem(key,JSON.stringify(levels[levelId]))}
     if(['light','dark'].includes(wrapper.theme))storage.setItem(THEME_KEY,wrapper.theme);
-    writeCloudMeta({dirty:false,hasSynced:true,lastSyncedRevision:Number(remote.revision||0),lastServerUpdatedAt:remote.updatedAt||null,localModifiedAt:remote.clientModifiedAt||remote.updatedAt||null,cloudEpoch:Number(remote.epoch||this.serverEpoch||0),lastSeenRevision:Number(remote.revision||0)});
-    setTimeout(()=>location.reload(),150);
+
+    const revision=Number(remote.revision||0),currentMeta=readCloudMeta(),changedDuringSync=syncSerial!=null&&this.changeSerial!==syncSerial,unresolvedLocalDirty=syncSerial==null?currentMeta.dirty===true:changedDuringSync;
+    const currentRemote=levels[UNIFIED_LEVEL]&&typeof levels[UNIFIED_LEVEL]==='object'?levels[UNIFIED_LEVEL]:null;
+    const shouldDefer=currentRemote&&!forceLive&&(cloudLearningSessionActive()||unresolvedLocalDirty);
+    if(shouldDefer){
+      this.deferredRemote=remote;this.deferredDetail=detail||'Cloud progress is ready.';
+      writeCloudMeta({...currentMeta,dirty:unresolvedLocalDirty,hasSynced:true,lastServerUpdatedAt:remote.updatedAt||currentMeta.lastServerUpdatedAt||null,cloudEpoch:Number(remote.epoch||this.serverEpoch||0),lastSeenRevision:revision});
+      this.setStatus('Synced · update queued',cloudLearningSessionActive()?'Cloud progress was merged without interrupting this activity. It will be applied after you leave the current exercise.':'A newer cloud update is ready and will be applied after pending local changes finish syncing.');
+      return {deferred:true};
+    }
+
+    if(currentRemote){
+      storage.setItem(STORAGE_KEY,JSON.stringify(currentRemote));
+      const next=loadState();
+      Object.keys(state).forEach(key=>delete state[key]);Object.assign(state,next);
+      // loadState/compactState normalize the cloud copy, but this direct save deliberately
+      // bypasses noteLocalSave so receiving cloud data never creates another upload loop.
+      compactState();syncLegacyVocabularyState(state);storage.setItem(STORAGE_KEY,JSON.stringify(state));
+    }
+    this.deferredRemote=null;this.deferredDetail='';
+    writeCloudMeta({...readCloudMeta(),dirty:false,hasSynced:true,lastSyncedRevision:revision,lastServerUpdatedAt:remote.updatedAt||null,localModifiedAt:remote.clientModifiedAt||remote.updatedAt||null,cloudEpoch:Number(remote.epoch||this.serverEpoch||0),lastSeenRevision:revision});
+    this.setStatus('Synced · cloud applied',detail||`Merge revision ${revision} applied without reloading the app.`);
+    const pageId=cloudCurrentPageId();if(!cloudLearningSessionActive()&&document.getElementById(pageId))setTimeout(()=>showPage(pageId,{syncHash:false}),0);
+    return {deferred:false};
+  },
+  async flushDeferredRemote(){
+    if(this.inFlight||cloudLearningSessionActive())return false;
+    if(this.deferredReset){const pending=this.deferredReset;await this.applyResetNow(pending.remote,pending.localPayload);return true}
+    if(!this.deferredRemote)return false;
+    const meta=readCloudMeta();
+    if(meta.dirty){if(CLOUD_AUTOMERGE&&this.ready&&navigator.onLine){clearTimeout(this.timer);this.timer=setTimeout(()=>this.mergeNow(true),120)}return false}
+    const remote=this.deferredRemote,detail=this.deferredDetail||'Applying the cloud progress received while you were studying…';
+    this.deferredRemote=null;this.deferredDetail='';
+    await this.applyRemote(remote,detail,{forceLive:true});return true;
   },
   async waitForRequest(requestId,minimumRevision,{tries=6}={}){
     for(let i=0;i<tries;i++){await new Promise(r=>setTimeout(r,this.pollDelay*(i<2?1:1.3)));const remote=await this.jsonp('state');if(!remote?.ok)throw new Error(remote?.error||'Cloud verification failed.');if(!backendSupportsMerge(remote))throw new Error('DeutschPath 5.1 merge backend is not deployed.');if(remote.lastRequestId===requestId&&(remote.resetRequired||Number(remote.revision||0)>=minimumRevision))return remote}
     throw new Error('The merge was sent, but Google Sheets did not confirm it yet. Your local copy is safe.');
   },
-  async handleResetRequired(remote,localPayload){
-    saveUnifiedResetRecovery(localPayload,'A cloud reset happened while this device was offline.');saveRecoveryCopy(storage.getItem(STORAGE_KEY)||'', 'Cloud reset tombstone protected this stale device copy.');
-    this.serverEpoch=Number(remote.epoch||this.serverEpoch||0);
-    if(remote.exists&&remote.json){await this.applyRemote(remote,'Another device reset cloud history and then created new progress. Loading the post-reset state…');return}
+  async applyResetNow(remote,localPayload){
+    this.deferredReset=null;
+    if(remote.exists&&remote.json){await this.applyRemote(remote,'Another device reset cloud history and then created new progress. The post-reset state is now applied.',{forceLive:true});this.ready=true;return}
     for(const key of Object.values(UNIFIED_LEVEL_KEYS))storage.removeItem(key);
     writeCloudMeta({dirty:false,hasSynced:true,lastSyncedRevision:Number(remote.revision||0),lastServerUpdatedAt:remote.updatedAt||null,cloudEpoch:this.serverEpoch,lastSeenRevision:Number(remote.revision||0)});
-    showRuntimeWarning('Cloud progress was reset on another device. This stale offline copy was preserved in local recovery storage and will not resurrect deleted progress.');
-    setTimeout(()=>location.href='../../index.html',220);
+    showRuntimeWarning('Cloud progress was reset on another device. This stale copy was preserved in recovery storage and was not allowed to restore deleted progress.');
+    location.href='../../index.html';
+  },
+  async handleResetRequired(remote,localPayload){
+    saveUnifiedResetRecovery(localPayload,'A cloud reset happened while this device was offline.');saveRecoveryCopy(storage.getItem(STORAGE_KEY)||'', 'Cloud reset tombstone protected this stale device copy.');
+    this.serverEpoch=Number(remote.epoch||this.serverEpoch||0);clearTimeout(this.timer);
+    if(cloudLearningSessionActive()){
+      this.deferredReset={remote,localPayload};this.ready=false;
+      const meta=readCloudMeta();writeCloudMeta({...meta,dirty:false,cloudEpoch:this.serverEpoch,lastSeenRevision:Number(remote.revision||0)});
+      this.setStatus('Cloud reset queued','Another device reset progress. Your current exercise will not be interrupted; the reset will apply after you leave this activity. A recovery copy has been preserved.');
+      return;
+    }
+    await this.applyResetNow(remote,localPayload);
   },
   async mergeNow(force=false){
     if(!this.isConfigured()||!this.ready||this.inFlight)return false;const meta=readCloudMeta();if(!force&&!meta.dirty)return true;
-    const stateJson=this.pendingStateJson||storage.getItem(STORAGE_KEY)||JSON.stringify(state),payload=cloudPayloadJson(stateJson);this.pendingStateJson=null;this.inFlight=true;clearTimeout(this.timer);
+    const stateJson=this.pendingStateJson||storage.getItem(STORAGE_KEY)||JSON.stringify(state),payload=cloudPayloadJson(stateJson),syncSerial=this.changeSerial;this.pendingStateJson=null;this.inFlight=true;clearTimeout(this.timer);
     const requestId=randomCloudId(),eventId=randomCloudId(),minimumRevision=this.serverRevision+1,clientEpoch=Number(meta.cloudEpoch??this.serverEpoch??0),modifiedAt=meta.localModifiedAt||new Date().toISOString();
     this.setStatus('Merging…','Combining progress from this device with all cloud devices…');this.updateButton(true);
     try{
@@ -737,15 +790,15 @@ const cloudSync={
       this.serverRevision=Number(result.revision||minimumRevision);this.serverEpoch=Number(result.epoch||clientEpoch||0);
       if(result.resetRequired){await this.handleResetRequired(result,payload);return false}
       const mergedDiffers=!!result.clientChanged;
-      if(mergedDiffers&&result.exists&&result.json){await this.applyRemote(result,result.mergeConflicts?`Other-device progress was merged. ${result.mergeConflicts} simultaneous text edit(s) were resolved by the latest merge.`:'Other-device progress was merged safely. Reloading the combined state…');return true}
-      writeCloudMeta({dirty:false,hasSynced:true,lastSyncedRevision:this.serverRevision,lastServerUpdatedAt:result.updatedAt||null,localModifiedAt:modifiedAt,cloudEpoch:this.serverEpoch,lastSeenRevision:this.serverRevision});
-      this.setStatus(result.mergeConflicts?'Synced · text edit noted':'Synced',result.mergeConflicts?`Revision ${this.serverRevision}. ${result.mergeConflicts} simultaneous text field edit(s) were logged by the backend.`:`Merge revision ${this.serverRevision} · ${cloudDeviceId().slice(0,8)}`);return true;
+      if(mergedDiffers&&result.exists&&result.json){await this.applyRemote(result,result.mergeConflicts?`Other-device progress was merged. ${result.mergeConflicts} simultaneous text edit(s) were resolved by the latest merge.`:'Other-device progress was merged safely in the background.',{syncSerial});return true}
+      const changedDuringSync=this.changeSerial!==syncSerial;writeCloudMeta({dirty:changedDuringSync,hasSynced:true,lastSyncedRevision:this.serverRevision,lastServerUpdatedAt:result.updatedAt||null,localModifiedAt:changedDuringSync?new Date().toISOString():modifiedAt,cloudEpoch:this.serverEpoch,lastSeenRevision:this.serverRevision});
+      if(changedDuringSync){this.pendingStateJson=storage.getItem(STORAGE_KEY)||JSON.stringify(state);this.setStatus('Synced · newer local changes queued',`Merge revision ${this.serverRevision} completed without interrupting your activity. Newer changes will merge next.`);if(CLOUD_AUTOMERGE&&navigator.onLine){clearTimeout(this.timer);this.timer=setTimeout(()=>this.mergeNow(),500)}}else this.setStatus(result.mergeConflicts?'Synced · text edit noted':'Synced',result.mergeConflicts?`Revision ${this.serverRevision}. ${result.mergeConflicts} simultaneous text field edit(s) were logged by the backend.`:`Merge revision ${this.serverRevision} · ${cloudDeviceId().slice(0,8)}`);return true;
     }catch(error){console.error('Cloud merge failed.',error);const current=readCloudMeta();current.dirty=true;current.localModifiedAt=current.localModifiedAt||modifiedAt;current.cloudEpoch=current.cloudEpoch??clientEpoch;writeCloudMeta(current);this.pendingStateJson=stateJson;this.setStatus('Offline / merge pending',`${error.message||'Cloud merge failed'} Local progress is safe.`);return false}
     finally{this.inFlight=false;this.updateButton()}
   },
   async downloadFromCloud(){
     if(!this.isConfigured()){this.setStatus('Not connected','Save a valid Web app URL and Sync key first.');return}if(this.inFlight)return;this.inFlight=true;this.setStatus('Checking cloud…','Loading the current merged cloud state…');this.updateButton(true);
-    try{const remote=await this.jsonp('state');if(!remote?.ok)throw new Error(remote?.error||'Google Sheets connection was rejected.');if(!backendSupportsMerge(remote))throw new Error('Upgrade Apps Script to the DeutschPath 5.1 merge backend first.');if(!remote.exists||!remote.json){this.setStatus('Cloud is empty','There is no merged cloud progress to download.');return}const localStateJson=storage.getItem(STORAGE_KEY)||JSON.stringify(state),localPayload=cloudPayloadJson(localStateJson);if(!confirm("Download the merged cloud state and replace this device's current local copy? A recovery copy will be preserved first.")){this.setStatus('Download cancelled','No data was changed.');return}saveUnifiedResetRecovery(localPayload,'Manual cloud download replaced local unified data.');saveRecoveryCopy(localStateJson,'Manual cloud download replaced this level copy.');storage.removeItem(CLOUD_MANUAL_RESTORE_HOLD_KEY);this.serverEpoch=Number(remote.epoch||0);await this.applyRemote(remote,'Downloading the current merged cloud progress…')}
+    try{const remote=await this.jsonp('state');if(!remote?.ok)throw new Error(remote?.error||'Google Sheets connection was rejected.');if(!backendSupportsMerge(remote))throw new Error('Upgrade Apps Script to the DeutschPath 5.1 merge backend first.');if(!remote.exists||!remote.json){this.setStatus('Cloud is empty','There is no merged cloud progress to download.');return}const localStateJson=storage.getItem(STORAGE_KEY)||JSON.stringify(state),localPayload=cloudPayloadJson(localStateJson);if(!confirm("Download the merged cloud state and replace this device's current local copy? A recovery copy will be preserved first.")){this.setStatus('Download cancelled','No data was changed.');return}saveUnifiedResetRecovery(localPayload,'Manual cloud download replaced local unified data.');saveRecoveryCopy(localStateJson,'Manual cloud download replaced this level copy.');storage.removeItem(CLOUD_MANUAL_RESTORE_HOLD_KEY);this.serverEpoch=Number(remote.epoch||0);await this.applyRemote(remote,'Downloaded the current merged cloud progress.',{forceLive:true})}
     catch(error){console.error('Cloud download failed.',error);this.setStatus('Download failed',`${error.message||'Could not download cloud progress.'} Local progress is safe.`)}finally{this.inFlight=false;this.updateButton()}
   },
   async mergeThisDevice(){
@@ -1229,6 +1282,7 @@ function showPage(id,{syncHash=true}={}){
     if(!notice){notice=document.createElement('div');notice.className='feedback bad page-error';page.prepend(notice)}
     notice.textContent='This section encountered an error, but navigation remains available. Reload the app or restore a backup if the issue continues.';
   }
+  setTimeout(()=>{try{cloudSync.flushDeferredRemote()}catch(error){console.warn('Deferred cloud update could not be applied yet.',error)}},0);
   return true;
 }
 window.showPage=showPage;
@@ -1742,8 +1796,8 @@ window.__DeutschPath={version:APP_VERSION,release:RELEASE_VERSION,insertGermanCh
 try{initialize()}catch(error){console.error('DeutschPath could not initialize completely.',error);showPage('dashboard',{syncHash:false})}
 setTimeout(()=>{try{cloudSync.initialize()}catch(error){console.warn('Cloud sync could not start.',error)}},0);
 </script>
-<script src="course-data.js?v=5.2.0"></script>
-<script src="course-engine.js?v=5.2.0"></script>
+<script src="course-data.js?v=5.2.1"></script>
+<script src="course-engine.js?v=5.2.1"></script>
 
 <script>
 (function(){

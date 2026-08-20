@@ -1,12 +1,12 @@
-DeutschPath 5.2.0 Unified
+DeutschPath 5.2.1 Unified
 
 Levels: A1, A2, B1, B2.
 Progress is independent per level. Settings, backup, cloud sync and PWA are shared.
 
 SYNC BACKEND 5.1
-No Apps Script change is required when upgrading from 5.1.7 to 5.2.0.
+No Apps Script change is required when upgrading from 5.1.7 to 5.2.1.
 
-5.2.0 CONTENT RECONCILIATION
+5.2.1 CONTENT RECONCILIATION
 - A1 remains 24 Guided Lessons + 24 Course Engine units.
 - A2 remains 30 Guided Lessons + 30 Course Engine units.
 - Former A1 outline units 25–45 were not simply discarded: every unique topic is now mapped into and authored inside the active 24 units.
@@ -18,6 +18,6 @@ No Apps Script change is required when upgrading from 5.1.7 to 5.2.0.
 - Final A1/A2 checkpoints now test reconciled material as well.
 - B1 and B2 content is unchanged.
 - Stable active Course Engine IDs are preserved for progress compatibility.
-- PWA cache and asset query versions are 5.2.0.
+- PWA cache and asset query versions are 5.2.1.
 
 Build: Web Deploy / PWA — safe automatic merge enabled.
